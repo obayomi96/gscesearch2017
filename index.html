@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GSCE Search App</title>
+  <link rel="icon"  href="images/logo2.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  <style>
+    body {
+    background-color: black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    text-align: center;
+    color: red;
+    font-family: 'Monoton', cursive;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    word-spacing: 0.30em;
+  }
+  
+  img {
+    font-size: smaller;
+    border-radius: 50%;
+  }
+  </style>
+</head>
+<br><br>
+<body>
+  <br><br><h1>
+    GSCE search App</h1>
+  <main class="searchForm-container">
+  <section>
+    <br><br><div id="searchResults">
+      <gcse:search></gcse:search>
+    </div>
+  </section>
+ <!--the anchor tags target and rel are added to make the search open in a new tab and in a secure window respectively -->
+</main> 
+</body>
+<script>
+  (function() {
+    var cx = '013914854117348825750:shnan3gqfve';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+</html>
